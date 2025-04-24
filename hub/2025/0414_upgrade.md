@@ -59,8 +59,8 @@ Consensus issue was immediately noticed and reported by multiple validators.
 - Following published instructions led to two different hashes
 - Validators misunderstood the log message ("Expected" vs "got" language led to people rolling back when they shouldn't have)
 - Rollback process didn't go well: it took a long time for nodes to rollback (>30m was fairly normal)
-- Default pruning parameters are too high
-- Validators get tempted to cancel the rollback (they want more verbose logs)
+  - Default pruning parameters are too high
+  - Validators get tempted to cancel the rollback (they want more verbose logs)
 - Some validators struggle with operations that are somewhat unique, especially exchanges
 - Rollback is an issue for validators using distributed/remote signers - once a hash is set, they cannot switch to a different one in order to avoid double-signing
 - Lack of information sharing led to the decision to call an emergency upgrade
@@ -70,7 +70,6 @@ Consensus issue was immediately noticed and reported by multiple validators.
 
 ### Where we got lucky
 - Not enough people running remote signers
-- Coinbase was online and responsive
 - Clear split between the different hashes - 45% vs 29% makes it easy to choose the canonical one
 - This consensus tool was helpful: https://itrocket.net/services/mainnet/cosmoshub/analytics/consensus/ 
 - Exploit was not executable by non-permissioned actors
